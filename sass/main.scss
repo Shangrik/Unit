@@ -1,0 +1,31 @@
+// base
+@import "./base/vars";
+@import "./base/base";
+@import "./base/fonts";
+
+//sections
+@import "./sections/header";
+@import "./sections/functional";
+@import "./sections/section-cta";
+@import "./sections/fluid-control";
+@import "./sections/priorities";
+@import "./sections/prices";
+@import "./sections/feed";
+@import "./sections/footer";
+
+// blocks
+@import "./blocks/btn-round";
+@import "./blocks/input";
+@import "./blocks/main-button";
+@import "./blocks/title-subtitle-descr";
+@import "./blocks/card";
+@import "./blocks/tarif";
+@import "./blocks/slider";
+@import "./blocks/nav-btn";
+@import "./blocks/nav-content";
+@import "./blocks/search-form";
+@import "./blocks/slide-up";
+
+// owl Carousel theme
+@import "./carousel/theme.default";
+@import "./carousel/theme";

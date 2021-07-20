@@ -1,0 +1,92 @@
+.tarif {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	padding: 40px 0;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.75);
+	border-radius: 8px;
+	color: #fff;
+
+	/* Tablet */
+	@media (max-width: 1199px) {
+		width: 270px;
+	}
+
+	/* Mobile */
+	@media (max-width: 899px) {
+		width: 300px;
+	}
+
+	/* Mobile XS */
+	@media (max-width: 599px) {
+		width: 290px;
+	}
+
+	&__title {
+		margin-bottom: 20px;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+		color: #b2b2b2;
+	}
+
+	&__price {
+		display: block;
+		margin-bottom: 15px;
+		font-weight: 700;
+		font-size: 80px;
+		line-height: 1;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
+
+	&__price-details {
+		margin-bottom: 40px;
+	}
+
+	&__month {
+		display: inline-block;
+		padding: 6px 15.3px;
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 30px;
+
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 1;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+	}
+
+	&__info {
+		padding-top: 40px;
+		margin-bottom: 58px;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1;
+
+		* + * {
+			margin-top: 25px;
+		}
+	}
+
+	&__button {
+		margin-top: auto;
+	}
+}
+
+.tarif--special {
+	background: rgba(48, 79, 254, 0.95);
+
+	.tarif__title {
+		color: #fff;
+	}
+
+	.tarif__month {
+		background: rgba(0, 0, 0, 0.1);
+	}
+}

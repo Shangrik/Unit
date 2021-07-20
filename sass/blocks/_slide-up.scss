@@ -1,0 +1,29 @@
+.slideup {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+.demo {
+    position: fixed;
+    left: 10%;
+    top: 10%;
+    z-index: 100;
+    color: brown;
+}

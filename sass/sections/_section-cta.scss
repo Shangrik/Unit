@@ -1,0 +1,55 @@
+.section-cta {
+    position: relative;
+    padding: 84px 0;
+    background-image: url("./../img/bg/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+
+    &__content {
+        position: relative;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1;
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        & span {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+}

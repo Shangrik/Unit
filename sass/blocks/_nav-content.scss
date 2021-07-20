@@ -1,0 +1,48 @@
+.nav-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.9); 
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &__header {
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: $accent_text;
+    }
+
+    &__list {
+        color: #fff;
+
+        li {
+            margin-bottom: 40px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            transition: color .2s ease-in;
+            &:hover {
+                color: $accent_text;
+            }
+        }
+    }
+
+    &--active {
+        top: 0;
+        opacity: .9;
+    }
+}
